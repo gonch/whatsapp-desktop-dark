@@ -87,14 +87,18 @@ progress[value]::-webkit-progress-value {
 .landing-wrapper:before {
     background-color: var(--accent) !important; }
 /* Reload QR code. */
-._2zufR {
+html[dir] ._1lwCi {
     background-color: var(--darker) !important; }
 /* Fix QR code. */
-.landing-window ._3qfVh {
+.landing-window ._1f7Gu {
     border: 3px solid white !important; }
 /* Tutorial. */
 .landing-window > div:last-child {
     background-color: var(--darker); }
+/* Tutorial icons */
+._1DiuS > svg > rect {
+    fill: var(--dark) !important;
+}
 /* Loader. */
 #startup svg > circle {
     stroke: var(--lighter) !important; }
@@ -107,25 +111,24 @@ progress[value]::-webkit-progress-value {
 span[class="_1DOO2"] > svg > rect {
     fill: var(--dark) !important; }
 
-
-/* Landing page. */
-.app .I3S-C .C7QbQ {
+/* Landing page and Chat area */
+#main, html[dir] ._3k8jM {
     /* box-shadow: 1px -3px 2px 0 var(--shadow) inset; */
     border: none;
     background-color: var(--dark); }
 /* Status update. */
-.app .I3S-C .C7QbQ ._2gydQ .bklGI {
+#app > div > div > div.m016k._2NKxI > div > div > div._1w3BZ {
     max-width: 200px;
     max-height: 200px;
     border-radius: 50%; }
 /* Text color. */
-.app .I3S-C .C7QbQ ._3cyUx * {
+#app > div > div > div.m016k._2NKxI > div ._3iDzm * {
     color: var(--light) !important; }
 /* Accent bar. */
-.app .I3S-C .C7QbQ:after {
+#app > div > div > div.m016k._2NKxI > div:after {
     border-top-color: var(--accent); }
 /* Author info */
-._23fWC::after, ._1Aq73::after {
+._1HYGi::after, ._1Aq73::after {
     display: block !important;
     margin-top: 17px;
     padding-top: 10px;
@@ -140,8 +143,13 @@ span[class="_1DOO2"] > svg > rect {
     background-color: var(--darker); }
 
 /* Chat list. */
+/* Chat header (settings buttons) */
 #side > header {
     background-color: var(--darker) !important; }
+/* Chat last message date/time */
+._1NLQZ {
+    color: var(--light) !important;
+}
 
 /* Chat preloader */
 ._10lQY {
@@ -159,22 +167,22 @@ span[class="_1DOO2"] > svg > rect {
     color: var(--lighter); }
 
 /* Search or start new chat. */
-#side ._2F7fE {
+#side > div._2v8uj {
     border-bottom: 0px solid var(--dark);
     background-color: var(--darker) !important;
     background-color: transparent !important; }
 /* Label background. */
-#side ._2F7fE ._1RmSA label,
+#side > div._2v8uj ._1RmSA label,
 ._1RmSA._3qnBM,
 ._2lczh ._1AxuS ._1RmSA {
     border: 0px solid var(--dark);
     background-color: var(--dark) !important; }
 /* Input element. */
-#side ._2F7fE ._1RmSA label input {
+#side > div._2v8uj ._1RmSA label input {
     color: var(--light);
     background-color: transparent; }
 /* Active. */
-#side ._2F7fE ._1RmSA._3qnBM {
+#side > div._2v8uj ._1RmSA._3qnBM {
     background-color: var(--dark) !important; }
 
 /* New group and group info buttons. */
@@ -188,7 +196,15 @@ span[class="_1DOO2"] > svg > rect {
 /* Remove participant button */
 ._1SvoX {
     background-color: var(--dark) !important; }
+/* Group name accent border */
+html[dir] ._36V4s ._4elAm {
+    border-bottom-color: var(--accent) !important; }
 
+/* Join group via link info */
+html[dir] .VScLO {
+    background-color: var(--dark); !important; }
+html[dir] ._2tZIF {
+    background-color: var(--darker); !important; }
 
 /* Search results. */
 #side .gHiUI {
@@ -298,8 +314,8 @@ html[dir] ._3B9EY {
 .dISnq .gHiUI {
     background-color: var(--darker) !important; }
 /* On event. */
-._1pzng .dISnq ._1Qelh._9m0_C,
-._1pzng .dISnq ._1Qelh:hover {
+html[dir] ._1Qelh._9m0_C,
+html[dir] ._1Qelh:hover {
     background-color: var(--dark) !important; }
 /* Search element */
 ._1bIFL ._1yBeH {
@@ -349,30 +365,30 @@ html[dir] ._1arra .s49Nq {
     background-color: var(--accent) !important; }
 
 /* Header. */
-.I3S-C #main header {
+#main > header {
     border: none;
     background-color: var(--darker);
     box-shadow: 0px 0px 3px 0px var(--accent); }
 /* Text color. */
-.I3S-C #main header ._2F-NA * {
+#main > header ._2F-NA * {
     color: var(--light); }
 
 /* Footer. */
-.I3S-C #main footer {
+#main footer {
     background-color: var(--darker); }
 /* Input wrapper. */
 #main footer > div {
     color: var(--light);
     border: none;
-    /* border-bottom: 2px solid var(--dark); */
+    border-top: 1px solid var(--darker);
     background-color: var(--dark); }
 /* Input element. */
 #main footer > div:nth-child(1) > div:nth-child(2) {
     border: none !important;
     color: var(--light);
     background-color: var(--darker) !important; }
-/* Voice message duration. */
-._310HD {
+/* Voice/Video message duration. */
+._310HD, ._3hQfB {
     color: var(--light) !important; }
 
 /* Unknown contact. */
@@ -500,7 +516,7 @@ html[dir] ._2zDbx {
     background-color: var(--dark) !important; }
 
 /* Search messages. */
-#pane-side ._1Qelh {
+#pane-side {
     background-color: transparent !important; }
 
 /* Starred messages. */
@@ -532,20 +548,24 @@ html[dir] .Och61 ._1Qelh {
     height: 72px !important;
 }
 /* Forwarding info */
-._faBY {
+html[dir] ._2FJOA {
     background-color: var(--darker) !important;
     border-top: 1px solid var(--dark) !important;
+}
+/* Forwarding info x selected */
+html[dir=ltr] ._2C9dW {
+    color: var(--light) !important;
 }
 
 
 /* Media/docs/links section. */
-.Och61 ._1M44b {
+html[dir] ._1M44b {
     background-color: var(--darker) !important; }
 /* Active indicator. */
-.Och61 ._1M44b:before {
+html[dir] ._1M44b:before {
     background-color: var(--accent) !important; }
 /* Selection Header. */
-html[dir] ._2prFz {
+html[dir] ._1J_3Z {
     background-color: var(--accent) !important; }
 /* Selected image. */
 .P85aN ._3xJ94 {
@@ -574,6 +594,11 @@ html[dir] ._2prFz {
 /* Preloader. */
 ._3dGYA {
     background-color: var(--darker) !important; }
+/* Border */
+html[dir] ._2TJWE {
+    border-top: solid 1px var(--accent) !important;
+    background: var(--darker) !important;
+}
 
 /* Header. */
 #app ._1zcz2 ._2YdsD, ._212qn .bJP_g {
@@ -605,7 +630,7 @@ html[dir=ltr] ._3kx-g:hover:not(._3E86i) {
 
 
 /* Message bubbles. */
-html[dir] .message-in .Nxkz1, .message-out, .message {
+html[dir] .message-in .Nxkz1, .message {
     background-color: var(--darker) !important; }
 html[dir] .message-out .Nxkz1 {
     background-color: var(--msgout) !important; }
@@ -811,11 +836,11 @@ footer ._2EJZE > div:last-child > div svg {
     z-index: 0 !important;
     border-top: 12px solid var(--darker);
     background: none !important; }
-.tail.message-in .tail-container {
+.message-in .tail-container {
     left: -10px !important; top: 0px;
     border-left: 10px solid transparent;
     border-radius: 5px 0 0 0; }
-.tail.message-out .tail-container {
+.message-out .tail-container {
     right: -10px !important; top: 0px;
     border-right: 10px solid transparent;
     border-top: 12px solid var(--msgout);
@@ -898,6 +923,10 @@ html[dir=ltr] ._3gNH7 {
 ._3wfs2,
 ._3Ztfl {
     color: var(--light) !important; }
+/* Search bar overflow */
+html[dir=ltr] ._19iwE {
+    right: 8px !important;
+}
 
 /* Gif preloader background. */
 .zl5TR {
@@ -939,14 +968,14 @@ html[dir=ltr] ._3gNH7 {
     border-bottom: 1px solid var(--darker) !important;
     background-color: var(--darker) !important; }
 /* Emoji race color popup. */
-._1ArIP, ._1ArIP ._1v2rQ {
-    background-color: var(--dark); }
+html[dir] ._3pPw1 {
+    background-color: var(--darker); }
 /* Separator. */
-._1ArIP ._2WvMb:first-child {
+html[dir=ltr] ._11W8Z:first-child {
     border-right: 2px solid var(--accent) !important; }
 /* Emoji menu triangle. */
-._1v2rQ {
-    background-color: var(--dark) !important; }
+html[dir] ._3pPw1 ._2DUBZ {
+    background-color: var(--darker) !important; }
 
 
 
@@ -975,7 +1004,10 @@ html[dir=ltr] ._3gNH7 {
 /* Empty element below search bar. */
 .dISnq span._3fOoY {
     display: none !important; }
-
+/* Search result info */
+._2ZdUP {
+    color: var(--light);
+}
 
 /* Buttons. */
 ._2QzpG, ._2JDHp, ._2Gki6, ._2MNzO {
@@ -1155,7 +1187,7 @@ span[data-icon="status-ptt-blue"] > svg > path {
 }
 
 /* Logo. */
-._1DOO2 > svg > path:first-child {
+._1DiuS > svg > path:first-child {
     fill: var(--accent) !important; }
 span[data-icon="logo"] svg path:nth-child(1) {
     fill: white !important; }
@@ -1173,6 +1205,8 @@ span[data-icon="emoji-gifs"] svg path {
 span[data-icon="exit"] svg path,
 span[data-icon="thumbs-down"] svg path,
 span[data-icon="recalled-in"] svg path,
+span[data-icon="status-miss"] svg path,
+span[data-icon="miss"] svg path,
 span[data-icon="recalled-out"] svg path {
     fill: var(--mred) !important; }
 
